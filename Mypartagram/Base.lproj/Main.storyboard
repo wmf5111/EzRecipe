@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="s7t-4c-QTv">
-                                <rect key="frame" x="80" y="144" width="255" height="108"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="108" id="2cN-Ew-QER"/>
-                                    <constraint firstAttribute="width" constant="255" id="IKi-KJ-ITu"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-PZ-lgz">
                                 <rect key="frame" x="70" y="297" width="97" height="24"/>
                                 <constraints>
@@ -85,25 +78,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EzRecipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg3-j0-jSE">
+                                <rect key="frame" x="64" y="169" width="270" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="Zhx-bO-cHx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Pfk-v0-5Hk" firstAttribute="top" secondItem="I1L-Is-qHd" secondAttribute="bottom" constant="45" id="2xM-IZ-Ms0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s7t-4c-QTv" secondAttribute="trailing" constant="79" id="6li-h2-a5c"/>
                             <constraint firstItem="dhF-Tf-wTT" firstAttribute="top" secondItem="CNk-KL-9p4" secondAttribute="bottom" constant="70" id="BOK-JH-J9i"/>
+                            <constraint firstItem="GuG-PZ-lgz" firstAttribute="top" secondItem="xg3-j0-jSE" secondAttribute="bottom" constant="46" id="CCn-vn-m6y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1L-Is-qHd" secondAttribute="trailing" constant="72" id="E9l-lU-eny"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CNk-KL-9p4" secondAttribute="trailing" constant="72" id="FJy-Fd-KBi"/>
-                            <constraint firstItem="s7t-4c-QTv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="On6-tP-3LM"/>
                             <constraint firstItem="GuG-PZ-lgz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="PB2-9S-vFM"/>
                             <constraint firstItem="914-Fr-UEE" firstAttribute="top" secondItem="CNk-KL-9p4" secondAttribute="bottom" constant="70" id="PkI-Fz-Qti"/>
                             <constraint firstItem="I1L-Is-qHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Rq4-ma-fdk"/>
-                            <constraint firstItem="GuG-PZ-lgz" firstAttribute="top" secondItem="s7t-4c-QTv" secondAttribute="bottom" constant="45" id="UVw-fd-9cf"/>
                             <constraint firstItem="CNk-KL-9p4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="VUx-9x-VIX"/>
                             <constraint firstItem="I1L-Is-qHd" firstAttribute="top" secondItem="GuG-PZ-lgz" secondAttribute="bottom" constant="20" id="Y8G-Km-xwC"/>
+                            <constraint firstItem="xg3-j0-jSE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="e76-ra-oxF"/>
+                            <constraint firstItem="xg3-j0-jSE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="pub-78-hgI"/>
                             <constraint firstItem="CNk-KL-9p4" firstAttribute="top" secondItem="Pfk-v0-5Hk" secondAttribute="bottom" constant="20" id="qBW-8s-hdf"/>
                             <constraint firstItem="Pfk-v0-5Hk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="qaY-GW-Il9"/>
-                            <constraint firstItem="s7t-4c-QTv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="qr2-fr-4Wh"/>
                             <constraint firstItem="dhF-Tf-wTT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="xxI-U2-JgG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="914-Fr-UEE" secondAttribute="trailing" constant="100" id="yeq-aK-QpW"/>
                         </constraints>
@@ -207,14 +208,14 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="FlQ-7o-vnZ">
-                                <rect key="frame" x="0.0" y="489.5" width="414" height="37.5"/>
+                                <rect key="frame" x="0.0" y="489.5" width="414" height="37"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FlQ-7o-vnZ" id="dGd-gC-L8c">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIO-vr-eBo">
-                                            <rect key="frame" x="16" y="8" width="390" height="21.5"/>
+                                            <rect key="frame" x="16" y="8" width="390" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" systemColor="systemGray2Color"/>
                                             <nil key="highlightedColor"/>
@@ -337,7 +338,6 @@
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
-        <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
